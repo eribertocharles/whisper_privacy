@@ -53,13 +53,18 @@ standard recording indicator whenever the microphone is active.</p>
 
 <h2>Network use</h2>
 <p>Whisperleaf works entirely on-device, with one exception: it downloads the <strong>speech and
-summarization models</strong> it runs. These are one-time downloads of the models <strong>to</strong>
-your device (delivered via Apple's systems and/or the models' public hosting). Apple's speech
-recognition uses a small language pack supplied by iOS; the larger Whisper model and the summarizer
-are downloaded only if you choose to use them, and can be removed again from Settings. <strong>No audio,
-transcripts, summaries, or personal information is ever transmitted</strong> during these downloads —
-data flows only <em>to</em> your device, never away from it. Whisperleaf contains no analytics,
-advertising, or crash-reporting services.</p>
+summarization models</strong> it runs. Those downloads are delivered by <strong>Apple</strong>, from
+Apple's servers, using Apple's Background Assets system — the same mechanism the App Store uses to
+deliver an app. Apple's speech recognition uses a small language pack supplied by iOS; the larger
+Whisper model and the summarizer are downloaded only if you choose to use them, and can be removed
+again from Settings. Translating a transcript uses Apple's translation packs, which iOS downloads the
+first time you pick a language &mdash; for that language and for the recording's own, since translating
+needs both &mdash; and which are shared with every app on your iPhone.</p>
+<p>These are one-time transfers <strong>to</strong> your device. <strong>No audio, transcripts,
+summaries, speaker names, or any other personal information is ever transmitted from your device</strong>
+&mdash; not during a download, and not at any other time. Whisperleaf sends nothing to us, to any
+AI service, or to any other third party. It contains no analytics, advertising, or crash-reporting
+services, and no account to sign in to.</p>
 
 <h2>No accounts, no tracking</h2>
 <ul>
